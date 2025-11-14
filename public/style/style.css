@@ -1,0 +1,62 @@
+/* ----- RESET BÁSICO ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ----- HEADER STYLE ----- */
+.header {
+  position: absolute; /* Fica por cima do banner */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 80px;
+  z-index: 10;
+}
+
+/* Container da navbar */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ----- LOGO ----- */
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: black;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+/* ----- LINKS DA NAVBAR ----- */
+.navbar a {
+  color: black;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 0.95rem;
+  font-weight: 300;
+  transition: 0.3s ease;
+}
+
+/* Estilo do link ativo */
+.navbar a.active {
+  color: black;
+  font-weight: 500;
+}
+
+/* Hover */
+.navbar a:hover {
+  color: white;
+  opacity: 1;
+}
+
+.btn-entrar {
+    padding: 10px 25px;
+    border: 1px solid beige;
+    background-color: beige;
+    border-radius: 15px;
+}
