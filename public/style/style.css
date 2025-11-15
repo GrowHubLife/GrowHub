@@ -1,4 +1,4 @@
-/* ----- RESET BÁSICO ----- */
+/* ----- RESET BÁSICO ----- */ 
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +6,11 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+/* ----- BACKGROUND VIDEO ----- */
 .bg-video {
   position: fixed;
   top: 0;
@@ -13,21 +18,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* fica atrás de tudo */
-  filter: brightness(45%); /* deixa o vídeo mais escuro para o texto aparecer */
+  z-index: -1;
+  filter: brightness(45%);
 }
 
 /* ----- HEADER STYLE ----- */
 .header {
-  position: absolute; /* Fica por cima do banner */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 80px;
+  padding: 35px 90px;
   z-index: 10;
 }
 
-/* Container da navbar */
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -36,38 +40,88 @@
 
 /* ----- LOGO ----- */
 .logo {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  color: #ffff;
-  letter-spacing: 1px;
+  color: white;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
-/* ----- LINKS DA NAVBAR ----- */
+/* ----- NAVBAR ----- */
 .navbar a {
-  color: #ffff;
+  color: white;
   text-decoration: none;
-  margin-left: 40px;
-  font-size: 0.95rem;
+  margin-left: 45px;
+  font-size: 1rem;
   font-weight: 300;
+  opacity: 0.85;
   transition: 0.3s ease;
 }
 
-/* Estilo do link ativo */
-.navbar a.active {
-  color: #ffff;
-  font-weight: 500;
-}
-
-/* Hover */
 .navbar a:hover {
-  color: white;
   opacity: 1;
 }
 
-.btn-entrar {
-    padding: 10px 25px;
-    border: 1px solid beige;
-    background-color: beige;
-    border-radius: 15px;
+/* Botões especiais 
+.btn-cadastro {
+  padding: 8px 20px;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-weight: 400;
 }
+
+.btn-login {
+  padding: 8px 20px;
+  border-radius: 6px;
+  background: white;
+  color: black !important;
+  font-weight: 500;
+}
+*/
+/* SEÇÃO HOME */
+.home-container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding-left: 90px;
+  padding-top: 120px; /* deixa abaixo da navbar */
+}
+
+#home .content {
+  max-width: 650px;
+}
+
+/* TÍTULOS - no estilo da referência */
+.content h3 {
+  color: white;
+  font-size: 3.4rem;
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.content p {
+  color: white;
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin: 20px 0 35px 0;
+  line-height: 1.7;
+}
+
+/* BOTÃO CTA */
+.btn {
+  background-color: white;
+  color: black;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  letter-spacing: 1px;
+}
+
